@@ -2,16 +2,16 @@
 class Stein < Formula
   desc "A linter for config files with a customizable rule set"
   homepage "https://github.com/b4b4r07/stein"
-  version "0.3.3"
+  version "0.3.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/b4b4r07/stein/releases/download/v0.3.3/stein_darwin_x86_64.tar.gz"
-    sha256 "881268da24bd7f4e070b0ff93a4afe854e1428120b5ff907018485605ac556df"
+    url "https://github.com/b4b4r07/stein/releases/download/v0.3.4/stein_darwin_x86_64.tar.gz"
+    sha256 "0eb362f82d4c2a9383b61a236ed5bfb258de406e8e25b24b5c4668df1dbd8c25"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/b4b4r07/stein/releases/download/v0.3.3/stein_linux_x86_64.tar.gz"
-      sha256 "d792d6f9bde80a37dc1797e68b5bd603f73b87ebfe3515fc680070facfc589b0"
+      url "https://github.com/b4b4r07/stein/releases/download/v0.3.4/stein_linux_x86_64.tar.gz"
+      sha256 "1bbf9726f2537472f44abf1aa3d6b8bb14224989f7e5b9daba05e9c0b68a506b"
     end
   end
 
