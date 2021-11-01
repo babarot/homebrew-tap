@@ -3,7 +3,6 @@ class Stein < Formula
   desc "A linter for config files with a customizable rule set"
   homepage "https://github.com/b4b4r07/stein"
   version "0.3.4"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/b4b4r07/stein/releases/download/v0.3.4/stein_darwin_x86_64.tar.gz"
