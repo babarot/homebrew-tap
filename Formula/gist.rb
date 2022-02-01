@@ -3,7 +3,6 @@ class Gist < Formula
   desc "A simple gist editor for CLI"
   homepage "https://github.com/b4b4r07/gist"
   version "1.2.4"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/b4b4r07/gist/releases/download/v1.2.4/gist_darwin_x86_64.tar.gz"

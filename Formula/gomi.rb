@@ -3,7 +3,6 @@ class Gomi < Formula
   desc "Replacement for UNIX rm command!"
   homepage "https://github.com/b4b4r07/gomi"
   version "1.1.1"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/b4b4r07/gomi/releases/download/v1.1.1/gomi_darwin_x86_64.tar.gz"
