@@ -5,21 +5,21 @@
 class Gomi < Formula
   desc "A Safer Alternative to the UNIX rm Command!"
   homepage "https://gomi.dev"
-  version "1.4.1"
+  version "1.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/babarot/gomi/releases/download/v1.4.1/gomi_Darwin_x86_64.tar.gz"
-      sha256 "40fe2610b9f839a737d6f652de53df7cf5f08ade987a065f76d70f0219a9fcde"
+      url "https://github.com/babarot/gomi/releases/download/v1.4.2/gomi_Darwin_x86_64.tar.gz"
+      sha256 "c381e153584c5a3b0b64b11ebd76ca13cb115cf42230343fb50dd218f9b7213c"
 
       def install
         bin.install "gomi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/babarot/gomi/releases/download/v1.4.1/gomi_Darwin_arm64.tar.gz"
-      sha256 "f09aab73522b15c0e3582d0d193d4f9c625d002904681d42b9958353fa077ae8"
+      url "https://github.com/babarot/gomi/releases/download/v1.4.2/gomi_Darwin_arm64.tar.gz"
+      sha256 "0715b3dcbf97daccf48dd4d668369cff56f7b03157488546957bc3d549b35ca7"
 
       def install
         bin.install "gomi"
@@ -30,8 +30,8 @@ class Gomi < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/babarot/gomi/releases/download/v1.4.1/gomi_Linux_x86_64.tar.gz"
-        sha256 "7ca297d3e8f552880c360c3f1c5d3e2141055e4a26f09ef52454af5a4515156a"
+        url "https://github.com/babarot/gomi/releases/download/v1.4.2/gomi_Linux_x86_64.tar.gz"
+        sha256 "0cc93a63455355ac57218308578b753c07fe97b13bd2f1babc9cf466ece0021b"
 
         def install
           bin.install "gomi"
@@ -40,8 +40,8 @@ class Gomi < Formula
     end
     if Hardware::CPU.arm?
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/babarot/gomi/releases/download/v1.4.1/gomi_Linux_armv6.tar.gz"
-        sha256 "beab191e9f6271a6119c85b7adb23ed302d89332cf7ed889d0d880063f84eae9"
+        url "https://github.com/babarot/gomi/releases/download/v1.4.2/gomi_Linux_armv6.tar.gz"
+        sha256 "08292a72893e461f6bcc53433a07eca48e57f390a4ca6ac96377abbf2827ced0"
 
         def install
           bin.install "gomi"
@@ -50,8 +50,8 @@ class Gomi < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/babarot/gomi/releases/download/v1.4.1/gomi_Linux_arm64.tar.gz"
-        sha256 "5bfc07e7bd46f8e00753a2f71f046431a2dc1674c1fd126cc3073d8ff07b5341"
+        url "https://github.com/babarot/gomi/releases/download/v1.4.2/gomi_Linux_arm64.tar.gz"
+        sha256 "3671d5d12e1b5a6c8f0c13d6d029502786c432805edf1073a2c2ad232eca90d9"
 
         def install
           bin.install "gomi"
