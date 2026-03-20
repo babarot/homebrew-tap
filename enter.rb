@@ -5,21 +5,21 @@
 class Enter < Formula
   desc "Show contextual info when you press Enter on an empty prompt"
   homepage "https://github.com/babarot/enter"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/babarot/enter/releases/download/v0.3.0/enter_Darwin_x86_64.tar.gz"
-      sha256 "d2feccfadae5c61eb7c16e10078847875a24bf82f2f58ac87ae2998f5dc1455c"
+      url "https://github.com/babarot/enter/releases/download/v0.4.0/enter_Darwin_x86_64.tar.gz"
+      sha256 "7c19a815107616af7d66e8164a1382c23529c2a5dd23ee6bbbfc7951dce9505e"
 
       define_method(:install) do
         bin.install "enter"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/babarot/enter/releases/download/v0.3.0/enter_Darwin_arm64.tar.gz"
-      sha256 "2c389077868ae1870a599078f1c2a59280d9aca69c238f4948e1fffcaf293404"
+      url "https://github.com/babarot/enter/releases/download/v0.4.0/enter_Darwin_arm64.tar.gz"
+      sha256 "5953075352e24f98472eadf580a7896275aaadf26ce6d52a1ff29d697e8ee721"
 
       define_method(:install) do
         bin.install "enter"
@@ -29,15 +29,15 @@ class Enter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/enter/releases/download/v0.3.0/enter_Linux_x86_64.tar.gz"
-      sha256 "064a26fd4d5292b59c5d4436e3d22dea64cdc8660f37dba313874eb7abc6f3d3"
+      url "https://github.com/babarot/enter/releases/download/v0.4.0/enter_Linux_x86_64.tar.gz"
+      sha256 "cb9d9a060bc5918198e70012f6b621a196e962634b5493260563057d7102dbdb"
       define_method(:install) do
         bin.install "enter"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/enter/releases/download/v0.3.0/enter_Linux_arm64.tar.gz"
-      sha256 "207799fc1ef57d37f1059c42d3397354831f907fe6bdceca0d617e1608ee51c9"
+      url "https://github.com/babarot/enter/releases/download/v0.4.0/enter_Linux_arm64.tar.gz"
+      sha256 "64cb3c84112e07af7b8c8db24397792a70a6f5ce7edd1920bc293c5d6dbdf048"
       define_method(:install) do
         bin.install "enter"
       end
