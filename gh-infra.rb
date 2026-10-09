@@ -5,21 +5,21 @@
 class GhInfra < Formula
   desc "A gh extension for infrastructure management"
   homepage "https://github.com/babarot/gh-infra"
-  version "0.14.0"
+  version "0.14.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/babarot/gh-infra/releases/download/v0.14.0/gh-infra_darwin_amd64.tar.gz"
-      sha256 "cefbcbbc36ca9db1452fa90c613f29c63f7cf5a48ad355c237564d9a9ba3903b"
+      url "https://github.com/babarot/gh-infra/releases/download/v0.14.1/gh-infra_darwin_amd64.tar.gz"
+      sha256 "d2f45f6f7d6a18b683dc0738bfb735659a638a00a5ae2e545e8cbccef2aefec7"
 
       define_method(:install) do
         bin.install "gh-infra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/babarot/gh-infra/releases/download/v0.14.0/gh-infra_darwin_arm64.tar.gz"
-      sha256 "1eff2797ff391b711560203067ce5faf8d82983f6870bf8b99fd970523de6354"
+      url "https://github.com/babarot/gh-infra/releases/download/v0.14.1/gh-infra_darwin_arm64.tar.gz"
+      sha256 "65216aeee9cf90576b7e5d878d8a95f8370d396dbaf9c33128a947430279c466"
 
       define_method(:install) do
         bin.install "gh-infra"
@@ -29,15 +29,15 @@ class GhInfra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/gh-infra/releases/download/v0.14.0/gh-infra_linux_amd64.tar.gz"
-      sha256 "302f683b1dd76f5cbd207f6c0ee596ce3287073ee9ce9107d89e5a1baab86690"
+      url "https://github.com/babarot/gh-infra/releases/download/v0.14.1/gh-infra_linux_amd64.tar.gz"
+      sha256 "2bdbb6faf414768fc3968f96bb6ca53d86fa76ee3bdd63d3b8192c90309d1f10"
       define_method(:install) do
         bin.install "gh-infra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/gh-infra/releases/download/v0.14.0/gh-infra_linux_arm64.tar.gz"
-      sha256 "e7d4d399acacc6383237397bbeb23b82a82f3690d30ab4d30db76aed6bcb0f55"
+      url "https://github.com/babarot/gh-infra/releases/download/v0.14.1/gh-infra_linux_arm64.tar.gz"
+      sha256 "6b0dd02820353d96162a8d6913c1ac069edaefa89992ad257b380900d28bf80a"
       define_method(:install) do
         bin.install "gh-infra"
       end
