@@ -5,21 +5,21 @@
 class Naminator < Formula
   desc "Bulk-rename w/ EXIF metadata"
   homepage "https://github.com/babarot/naminator"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/babarot/naminator/releases/download/v0.2.5/naminator_Darwin_x86_64.zip"
-      sha256 "ea0df5e75a409e5e979acfbeadf96a36845573744a4f26ff950ca0254fcebc32"
+      url "https://github.com/babarot/naminator/releases/download/v0.2.6/naminator_Darwin_x86_64.zip"
+      sha256 "fd72aa6f72c7be74e8f5d61c180e6d4e2c7259330c2661e75c95c6aa02fb90a4"
 
       define_method(:install) do
         bin.install "naminator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/babarot/naminator/releases/download/v0.2.5/naminator_Darwin_arm64.zip"
-      sha256 "3f427922442b6bc0284cb133ac5216001e0edcc023b5b6b68c4b86584200fc2d"
+      url "https://github.com/babarot/naminator/releases/download/v0.2.6/naminator_Darwin_arm64.zip"
+      sha256 "c87e104bfbefb344b4baaa731ba858aefac265040ec4054135d5221f3e9edaac"
 
       define_method(:install) do
         bin.install "naminator"
@@ -29,15 +29,15 @@ class Naminator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/naminator/releases/download/v0.2.5/naminator_Linux_x86_64.tar.gz"
-      sha256 "27a3e1e11f71cfb403ab14b435064ed57e23a622ea734ff138f7ae5ed5530e11"
+      url "https://github.com/babarot/naminator/releases/download/v0.2.6/naminator_Linux_x86_64.tar.gz"
+      sha256 "4a0211a639b27a0edd2dd367dfaf6b5f42f6438bcbea0b340560f744d96409aa"
       define_method(:install) do
         bin.install "naminator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/naminator/releases/download/v0.2.5/naminator_Linux_arm64.tar.gz"
-      sha256 "ccb33922a2d5438bdc697585251393962be5f22d9f607d57db5579d6725d31ae"
+      url "https://github.com/babarot/naminator/releases/download/v0.2.6/naminator_Linux_arm64.tar.gz"
+      sha256 "8b3871c34b353e1a02449ff5f75f2f72cf36b05220130f98dbf20bb43fae026a"
       define_method(:install) do
         bin.install "naminator"
       end
