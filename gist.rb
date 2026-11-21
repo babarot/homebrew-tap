@@ -5,21 +5,21 @@
 class Gist < Formula
   desc "Read and edit your GitHub Gists from the terminal"
   homepage "https://github.com/babarot/gist"
-  version "2.1.0"
+  version "2.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/babarot/gist/releases/download/v2.1.0/gist_Darwin_x86_64.tar.gz"
-      sha256 "177a1009b6e27823224c82870e695cd456389dab447fff308794705d3f76bbf5"
+      url "https://github.com/babarot/gist/releases/download/v2.2.0/gist_Darwin_x86_64.tar.gz"
+      sha256 "ed729ecde6f19b49824306d01bf45f9c40aeb4078354c1d570312ba4aae528f5"
 
       define_method(:install) do
         bin.install "gist"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/babarot/gist/releases/download/v2.1.0/gist_Darwin_arm64.tar.gz"
-      sha256 "640ac71045abb7ce165dbe0cef7da09a99833f9a8126e3b6f3b06ba31e99fd71"
+      url "https://github.com/babarot/gist/releases/download/v2.2.0/gist_Darwin_arm64.tar.gz"
+      sha256 "febab11e44dbdc4615aa40bd0160f24a109104d5f13686739b0d404bd782ac61"
 
       define_method(:install) do
         bin.install "gist"
@@ -29,15 +29,15 @@ class Gist < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/gist/releases/download/v2.1.0/gist_Linux_x86_64.tar.gz"
-      sha256 "2b553e3901ebe07dda8eb7c821fb6a03564579d52b88032501b4ddfef1743436"
+      url "https://github.com/babarot/gist/releases/download/v2.2.0/gist_Linux_x86_64.tar.gz"
+      sha256 "82c295136d51aa67761f6e9316a436c4148d1929d6848fbcb3461adb3a8cff12"
       define_method(:install) do
         bin.install "gist"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/babarot/gist/releases/download/v2.1.0/gist_Linux_arm64.tar.gz"
-      sha256 "8c8653112f41f1cd92ad49204cb898fec35b273be665aaaf5c299199d25f6372"
+      url "https://github.com/babarot/gist/releases/download/v2.2.0/gist_Linux_arm64.tar.gz"
+      sha256 "fffc8b1389edde0ff87488f57cc0d40db7bee0409ef789b927d583170db268ac"
       define_method(:install) do
         bin.install "gist"
       end
